@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 16px;  
+}
+
+/* ATENÇÃO QUE O STYLE NÃO ESTÁ COMPLETO */
+
+form {
+  max-width: 600px;
+  min-width: 300px;
+}
+
+fieldset {
+  border-bottom: 3px solid #3b3b4f;
+}

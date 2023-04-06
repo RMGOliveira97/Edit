@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Alien Abduction Order Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <h1>Alien Abduction Order Form</h1>
+        <p>
+          Fill out the form below to place an order for an alien abduction by
+          one of our fine UFOs.
+        </p>
+        <br>
+        <form>
+            <fieldset>
+        <legend>Your contact information</legend>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required></input><br>
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone"></input><br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com"></input><br>
+        </fieldset>
+
+        <fieldset>
+        <h2>About your abduction</h2>
+        
+        <label for="date">Request date</label>
+        <input type="date" id="date" name="date" min="2023-03-17"><br>
+        <label for="quantity">How many people would you like abducted?</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+        <p>What type of UFO do you prefer?</p>
+        <label> 
+          <input type="radio" name="ufo" value="Classic" checked >Classic oval UFO
+        </label><br>
+        <label>
+          <input type="radio" name="ufo" value="Starwars">Star Wars-style Imperial cruiser
+        </label><br>
+        <label>
+          <input type="radio" name="ufo" value="galactica">Battlestar Galactica-style Viper
+        </label><br>
+        <label>
+          <input type="radio" name="ufo" value="startrek">Borg-style cube
+        </label><br>
+        <label>
+          <input type="radio" name="ufo" value="any">Whatever is in the neighborhood
+        </label><br>
+        
+        <label for="abtype"
+              >What type of abduction experience do you want?</label
+            >
+            <select id="abtype" name="abtype">
+              <option selected>Select one...</option>
+              <option value="tour">Tour of the solar system</option>
+              <option value="dinner">Alien dinner and discussion</option>
+              <option value="dance">Alien dance lessons</option>
+              <option value="whales">Whale watching</option></select
+            ><br /><br />
+
+        <label for="comments">Special requests</label><br>
+        <textarea id="comments" name="requests"></textarea><br><br>
+      
+        <label>
+          <input
+            id="subscribe"
+            name="subscribe"
+            type="checkbox"
+            value="subscribe"
+          >Add me to your email list
+        </label><br /><br />
+        <input
+          id="send_to"
+          type="hidden"
+          name="send_to"
+          value="yourEmailHere"
+        >
+        <button type="submit">Submit</button>
+    </fieldset>
+
+    </form>
+      </section>
+      <aside>
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217315.37667902937!2d-9.134568743862339!3d38.94767122218098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193479d0af097d%3A0xac0c1f4d67894d63!2sEDIT.%20-%20Disruptive%20Digital%20Education!5e0!3m2!1spt-PT!2spt!4v1679227457699!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Edit location"></iframe>
+        <address>
+          EDIT. - Disruptive Digital Education &middot; Alameda D.Afonso
+          Henriques, 7A &middot; 1900-178, Lisboa
+        </address>
+      </aside>
+    </div>
+  </body>
+</html>
