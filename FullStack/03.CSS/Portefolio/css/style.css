@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151515;
+  color: #ffffff;
+  font-family: "space grotesk", sans-serif;
+  width: 100%;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.social-items {
+  width: 15%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.intro {
+  background: #151515;
+}
+
+.headline {
+  font-family: "space grotesk";
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 88px;
+}
+
+.description,
+.skills-time {
+  font-family: "space grotesk medium";
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.contact {
+  font-family: "space grotesk";
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: underline #4ee1a0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 78%;
+}
+
+.underline {
+  text-decoration: underline #4ee1a0;
+}
+
+.skills-box {
+  display: grid;
+  grid-row-gap: 30px;
+  grid-column-gap: 58px;
+  grid-template-columns: repeat(3, 345px);
+  grid-template-rows: repeat(3, auto);
+}
+
+.skills-title {
+  font-family: "space grotesk bold";
+  font-size: 48px;
+  line-height: 56px;
+}
