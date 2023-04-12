@@ -3,22 +3,73 @@ html {
 }
 
 body {
-  width: 50%;
+  width: 100%;
   height: 100vh;
-  margin: auto;
+  margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
   font-family: Tahoma, Helvetica, sans-serif;
   font-size: 16px;  
 }
 
-/* ATENÇÃO QUE O STYLE NÃO ESTÁ COMPLETO */
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
 
 form {
-  max-width: 600px;
+  max-width: 500px;
   min-width: 300px;
+  width: 70vh;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 fieldset {
+  border: none;
+  padding: 2em 0;
   border-bottom: 3px solid #3b3b4f;
+}
+
+/* fieldset:last-of-type {
+  border-bottom: none;
+} */
+
+label {
+  display: block;
+  padding: 0.5em 0;
+}
+
+input,
+textarea,
+select {
+  margin: 0.5em 0 0 0;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: black;
+  border: 1px solid black;
+  color: #ffffff;
+}
+
+textarea {
+  resize: none;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  background-color: gray;
+  border-color: white;
+  min-width: 300px;
 }
