@@ -49,7 +49,7 @@ body {
 .bg-less-dark {
   background-color: var(--bg-contact);
 }
-
+/* Todos os elementos tem margin 0 porque o browser já tem margens predefenidadas */
 h1,
 h2,
 h3,
@@ -62,7 +62,7 @@ h2,
 h3 {
   line-height: 1;
 }
-
+/* Através do clamp fica responsive para todos os dispositivos apenas o font-size */
 .header-xl {
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
@@ -81,6 +81,7 @@ a {
   transition: color var(--transition);
 }
 
+/* Permite a navegação com o tab */
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
@@ -88,11 +89,13 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
+/* quando os dados não estão corretos cria uma borda vermelha */
 input:invalid,
 textarea:invalid {
   outline-color: var(--invalid);
 }
 
+/* Está a criar todos os sublinhados verdes */
 a.underline,
 button {
   display: inline-block;
@@ -132,13 +135,14 @@ svg {
   overflow: hidden;
 }
 
+/* Cria as margens da pagina toda */
 .wrapper {
   width: calc(100% - 2rem);
   max-width: var(--container);
   margin-inline: auto;
 }
 
-/* 600px */
+/* 600px - cria as margens para o tablet*/
 @media (min-width: 37.5em) {
   .wrapper {
     width: calc(100% - 3.75rem);
@@ -183,7 +187,7 @@ svg {
 .header__social:hover > svg > path {
   fill: var(--accent);
 }
-
+/* Margens do Header para o tablet e para o desktop */
 @media (min-width: 37.5em) {
   .header {
     margin-block-start: 30px;
@@ -275,6 +279,7 @@ h1 > span {
   margin-block-end: 24px;
 }
 
+/* Responsive para o tablet hero section */
 @media (min-width: 37.5em) {
   .hero {
     position: relative;
@@ -344,6 +349,7 @@ h1 > span {
   }
 }
 
+/* Responsive para o desktop hero section */
 @media (min-width: 62.5em) {
   .hero {
     margin-block-start: 0px;
@@ -391,7 +397,7 @@ h1 > span {
   }
 
   .hero__description {
-    width: 38ch;
+    width: 445px;
     margin-block-end: 66px;
   }
 }
