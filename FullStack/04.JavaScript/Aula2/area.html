@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <script src="area.js" defer></script>
+</head>
+<body>
+    <h1>Calcula a maior área</h1>
+    <div class="table">
+        <div>
+            <h2>Quadrado</h2>
+            <label for="squareSide">Lado do quadrado</label>
+            <input type="number" id="squareSide" class="squareSide-js" min="1" required>
+        </div>
+        <div>
+            <h2>Retângulo</h2>
+            <label for="rectangleHeight">Altura do retângulo</label>
+            <input type="number" id="rectangleHeight" class="rectangleHeight-js" min="1" required>
+            <label for="rectangleLenght">Largura do retângulo</label>
+            <input type="number" id="rectanglelenght" class="rectangleLenght-js" min="1" required>
+        </div>
+        <div>
+            <h2>Triângulo</h2>
+            <label for="triangleHeight">Altura do triângulo</label>
+            <input type="number" id="triangleHeight" class="triangleHeight-js" min="1" required>
+            <label for="triangleBase">Largura da base do triângulo</label>
+            <input type="number" id="triangleBase" class="triangleBase-js" min="1" required>
+        </div>
+        <button onclick="areaCalculator()">Calcular</button>
+    </div>
+    <div>
+        <p class="result-js"></p>
+    </div>
+</body>
+</html>
