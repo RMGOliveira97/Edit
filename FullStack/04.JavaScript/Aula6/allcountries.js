@@ -24637,5 +24637,12 @@ document.querySelector(".clear-js").addEventListener("click", () => {
   selectCountry.value = "";
 });
 
+// const countriesInContinent = countries.reduce(
+//   (acc, curr) => ({
+//     ...acc,
+//     [curr.region.toLowerCase()]: acc[curr.region.toLowerCase()] + 1,
+//   }),
+//   { europe: 0, asia: 0, oceania: 0, americas: 0, antarctic: 0, africa: 0 }
+// );
 
-// document.querySelector(".countrys-in-continent").innerHTML =
+// console.log(countriesInContinent);

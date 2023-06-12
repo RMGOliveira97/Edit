@@ -1,0 +1,17 @@
+.header {
+  background-color: lightblue;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 10%;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    p {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.bottom {
+  background-color: grey;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 7%;
+  }
+  p {
+    font-size: 20px;
+  }
+}
