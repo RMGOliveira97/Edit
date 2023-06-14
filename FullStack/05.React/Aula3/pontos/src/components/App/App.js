@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Button from "../Button/Button";
 import "./App.scss";
-import { Formik, Form, Field } from "formik";
+import BasicForm from "../BasicForm/BasicForm";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -80,39 +80,7 @@ function App() {
         ))}
       </section>
       <div>
-        <Formik
-          initialValues={{ name: "", email: "", password: "" }}
-          validate={(values) => validation(values)}
-          onSubmit={(values, { setSubmitting }) =>
-            handleSubmit(values, { setSubmitting })
-          }
-        >
-          <Form>
-            <section>
-              <div>
-                <label htmlFor="name">Name</label>
-                <Field type="name" name="name"></Field>
-              </div>
-            </section>
-            <section>
-              <div>
-                <label htmlFor="email">Email</label>
-                <Field type="email" name="email"></Field>
-              </div>
-            </section>
-            <section>
-              <div>
-                <label htmlFor="pw">Password</label>
-                <Field type="text" name="pw"></Field>
-              </div>
-            </section>
-            <section>
-              <Button type={"submit"} disabled={isSubmitting}>
-                Submit
-              </Button>
-            </section>
-          </Form>
-        </Formik>
+        <BasicForm />
       </div>
     </div>
   );
