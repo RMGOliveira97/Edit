@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <script src="todolist.js" defer></script>
+  </head>
+  <body>
+    <div class="profile-container-js"></div>
+    <div class="add-task-form">
+      <form class="add-new-task-js" onsubmit="addNewTask(event)">
+        <div class="form-control">
+          <label>Name:</label>
+          <input type="text" name="taskName" class="task-name" />
+        </div>
+        <div class="form-control">
+          <label>End Date:</label>
+          <input type="date" name="endDate" class="end-date" />
+        </div>
+        <div class="form-control">
+          <label>Message:</label>
+          <input type="textarea" name="taskMessage" class="message" />
+        </div>
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+    <h3>Tasks List</h3>
+    <div class="todo-list-js"></div>
+    <div class="add-new-task"></div>
+  </body>
+</html>
