@@ -103,6 +103,6 @@ function removeTask(id) {
 function toggleComplete(id) {
   const index = tasks.findIndex((t) => t.id === id);
   tasks[index].completed = !tasks[index].completed;
-
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   displayTasks();
 }
