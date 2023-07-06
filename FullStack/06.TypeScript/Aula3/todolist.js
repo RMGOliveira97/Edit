@@ -1,23 +1,8 @@
 "use strict";
-let tasks = [
-    {
-        name: "Test1",
-        creationDate: new Date(),
-        endDate: "new date",
-        message: "test 1",
-        completed: false,
-    },
-    {
-        name: "Test2",
-        creationDate: new Date(),
-        endDate: "new date",
-        message: "test 1",
-        completed: false,
-    },
-];
+let tasks = [];
+let tasksAdded = 0;
 function displayTasks() {
-    const profileContainerElement = document.querySelector(".todo-list-js");
-    profileContainerElement.innerHTML = tasks
+    document.querySelector(".todo-list-js").innerHTML = tasks
         .map((t) => {
         return `<div class="task">
       <div class="task-name">
@@ -32,24 +17,43 @@ function displayTasks() {
       <div class="task-message">
       <label>Message:</label>
       <span>${t.message}</span></div>
-      <div class="task-completed">
+      <div class="task-completed" onClick="completedTask('${t.id}')">
       <label>Completed:</label>
       <span>${t.completed}</span></div>
+      <div>
+      <button onClick="removeTask('${t.id}')">remove</button>
+      </div>
       
     </div>`;
     })
         .join("");
 }
 displayTasks();
-function addNewTask() {
-    const taskName = document.querySelector(".task-name");
+function addNewTask(event) {
+    event.preventDefault();
+    tasksAdded++;
+    const taskName = document.querySelector(".task-name")
+        .value;
     const taskCreationDate = new Date();
-    const taskEndDate = document.querySelector(".task-end-date");
-    const taskMessage = document.querySelector(".task.message");
+    const taskEndDate = document.querySelector(".task-end-date").value;
+    const taskMessage = document.querySelector(".task-message").value;
     tasks.push({
+        id: "task" + tasksAdded,
         name: taskName,
         creationDate: taskCreationDate,
         endDate: taskEndDate,
         message: taskMessage,
+        completed: false,
     });
+    displayTasks();
+}
+function removeTask(id) {
+    const index = tasks.findIndex((t) => t.id === id);
+    tasks.splice(index, 1);
+    displayTasks();
+}
+function completedTask(id) {
+    const index = tasks.findIndex((t) => t.id === id);
+    tasks[index].completed = !tasks[index].completed;
+    displayTasks();
 }
